@@ -26,7 +26,8 @@ body {
 
 #pagebg {
   display: flex;
-  height: 70vh;
+  height: 600px;
+  overflow:hidden;
   align-items: center;
   justify-content: center;
   background-image:url('https://cdn.discordapp.com/attachments/292274811185397770/714648259246948352/quest-log-temp.png');
