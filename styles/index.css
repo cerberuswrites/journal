@@ -57,7 +57,7 @@ body {
 .questtitle {
   font-family: 'MedievalSharp', serif; 
   letter-spacing:2px;
-  font-size:16px;
+  font-size:14px;
   font-weight:bold;
   color:var(--dark1);
   margin:2px 0px;
