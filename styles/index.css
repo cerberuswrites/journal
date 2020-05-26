@@ -140,3 +140,36 @@ body {
   width: 0;
   height: 0;
 }
+
+/* NAVIGATION */
+
+#mainnav {
+  background-image:url('https://cdn.discordapp.com/attachments/292274811185397770/714678149056561202/scraps.png');
+  width:100px;
+  height:400px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  position:absolute;
+  left:0;
+}
+
+.mainnavlink {
+  font-family: 'MedievalSharp', serif; 
+  letter-spacing:1px;
+  font-size:12px;
+  position:absolute;
+  width:85px;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.mainnavlink a {
+  text-decoration:none;
+  color:#000;
+}
+
+.mainnavlink a:hover {
+  letter-spacing:2px;
+}
