@@ -3,16 +3,114 @@
  * styles for main quest log go here !
  */
 
-@font-face {
-    font-family: 'mason';
-    src: url('https://cdn.rawgit.com/pie-geon/styles/MasonSerif.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+:root {
+  --dark1: rgba(95, 56, 29, 1);
+  --dark2: rgba(95, 56, 29, 0.3);
+}
 
 body {
   background: #eee;
+  background-image:url('https://cdn.discordapp.com/attachments/292274811185397770/714636196151820329/table-bg-ver-1.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
   color:#333;
-  font-family: 'mason', serif; 
-  font-weight: 400;
+  font-family:arial, sans serif;
+  margin:0;
+}
+
+#pagebg {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  background-image:url('https://cdn.discordapp.com/attachments/292274811185397770/714648259246948352/quest-log-temp.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  width:800px;
+  box-sizing:border-box;
+  margin: 0 auto;
+  margin-top:100px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 20px;
+}
+
+#pagescroll {
+  overflow:auto;
+  height:200px;
+  width:720px;
+  text-align:justify;
+  line-height:200%;
+  font-family:'Gentium Book Basic', serif;
+  font-size:14px;
+  height:500px;
+}
+
+#pagescroll::-webkit-scrollbar {   
+  width:0px;
+}
+
+.questtitle {
+  font-family: 'MedievalSharp', serif; 
+  letter-spacing:2px;
+  font-size:18px;
+  font-weight:bold;
+  color:var(--dark1);
+  margin:5px 0px;
+  width:200px;
+  box-sizing:border-box;
+  display:block;
+  text-decoration:none;
+}
+
+.questpoint {
+  width:400px;
+}
+
+.questflex {
+  display:flex;
+  width:700px;
+  box-sizing:border-box;
+}
+
+.pagetitle {
+  font-family: 'MedievalSharp', serif; 
+  letter-spacing:2px;
+  font-size:24px;
+  font-weight:bold;
+  color:var(--dark1);
+  width:200px;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+
+/* SLIDER */
+
+.questslider {
+  margin-left:100px;
+  width:400px;
+  box-sizing:border-box;
+  overflow:hidden;
+  height:350px;
+}
+
+.questslides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.questslides::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
