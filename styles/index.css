@@ -67,9 +67,14 @@ body {
   text-decoration:none;
 }
 
+.questtitle:hover {
+  letter-spacing:2.5px;
+}
+
 .questpoint {
+  margin-top:10px;
   width:380px;
-  height:450px;
+  height:470px;
   overflow:auto;
 }
 
