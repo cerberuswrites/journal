@@ -1,0 +1,12 @@
+/**
+ * index.scss
+ * styles for main quest log go here !
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap');
+
+body {
+  background: #eee;
+  color:#333;
+  font-family:arial, sans serif;
+}
