@@ -10,10 +10,11 @@
 :root {
   --dark1: rgba(95, 56, 29, 1);
   --dark2: rgba(95, 56, 29, 0.3);
+  --light1: #cec1ab;
 }
 
 body {
-  background: #eee;
+  background: #1a1a1a;
   background-image:url('https://cdn.discordapp.com/attachments/292274811185397770/714636196151820329/table-bg-ver-1.png');
   background-size:cover;
   background-repeat:no-repeat;
@@ -172,4 +173,27 @@ body {
 
 .mainnavlink a:hover {
   letter-spacing:2px;
+}
+
+/* ALLIES SCREEN */
+
+.charflex {
+  display:flex;
+  width:370px;
+  border-top:1px solid var(--dark1);
+  margin-top:50px;
+  padding-top:50px;
+  line-height:150%;
+  align-items: center;
+  justify-content: center;
+}
+
+.charpix {
+  width:120px;
+  margin-right:10px;
+}
+
+.charpix img {
+  width:120px;
+  height:auto;
 }
